@@ -152,6 +152,11 @@ exports PNG and PDF separately from the original quicklook.
   Altimeter Observations*, <https://doi.org/10.1029/2018JC014844>.
 - Rhines (1975), *Waves and turbulence on a beta-plane*,
   <https://doi.org/10.1017/S0022112075001504>.
+- Halo, I., Raj, R. P., Korosov, A., Penven, P., Johannessen, J. A., &
+  Rouault, M. (2023), *Mesoscale variability, critical latitude and eddy mean
+  properties in the tropical South-East Atlantic Ocean*, *Journal of
+  Geophysical Research: Oceans*, 128, e2022JC019050,
+  <https://doi.org/10.1029/2022JC019050>.
 
 ## Validation and licence
 
