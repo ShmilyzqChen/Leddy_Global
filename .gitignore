@@ -13,11 +13,19 @@ dist/
 # Local machine paths and generated products
 config/local_*.yml
 intermediate/
-output/
 logs/
-figures/
+output/*
+figures/*
 
 # Keep empty generated-data directories in local checkouts only
 *.nc
 *.npz
 *.log
+
+# Curated release products retained in the public repository
+!output/leddy_global_025deg.nc
+!output/leddy_south_china_sea_025deg.nc
+!output/validation_global.json
+!output/validation_south_china_sea.json
+!figures/global_jet_contourf_180_rhines1975_final.png
+!figures/global_jet_contourf_180_rhines1975_final.pdf

@@ -31,7 +31,7 @@ Copy `config/example_scs.yml` to `config/local_scs.yml` for the regional test,
 and `config/example.yml` to `config/local_global.yml` for global production.
 Edit the five `paths` entries in each local file; the examples already contain
 their respective region bounds. Local configurations, source datasets,
-intermediates, and results are ignored by Git.
+intermediates, logs, and non-release outputs are ignored by Git.
 
 ## Obtaining the inputs
 
@@ -53,7 +53,24 @@ not redistribute third-party data or the full 32-year archive.
   the DT2024 / 202411 release; later reprocessing may not be bitwise identical.
 
 Record the source release/version and download date when publishing derived
-results. Input archives and output NetCDFs are intentionally excluded from Git.
+results. Input archives are intentionally excluded from Git.
+
+## Published results
+
+The repository includes the curated outputs from the completed 1993--2024 run:
+
+- `output/leddy_global_025deg.nc`: global 0.25-degree product.
+- `output/leddy_south_china_sea_025deg.nc`: regional smoke-test product.
+- `output/validation_global.json` and
+  `output/validation_south_china_sea.json`: numerical validation summaries.
+- `figures/global_jet_contourf_180_rhines1975_final.png` and the matching
+  PDF: final six-panel global visualization.
+
+The validation status is `PASS` for both products. Source archives,
+restartable intermediates, logs, local path configurations, and exploratory
+figures remain excluded.
+SHA-256 digests for the six published artifacts are recorded in
+`SHA256SUMS`.
 
 ## Staged execution
 

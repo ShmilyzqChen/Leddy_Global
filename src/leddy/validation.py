@@ -29,7 +29,12 @@ def validate_output(config: dict) -> Path:
     source = root / "output" / f"leddy_{name}_025deg.nc"
     if not source.exists():
         raise FileNotFoundError(source)
-    report: dict = {"source": str(source), "region": name, "checks": {}, "fields": {}}
+    report: dict = {
+        "source": f"output/{source.name}",
+        "region": name,
+        "checks": {},
+        "fields": {},
+    }
     with netCDF4.Dataset(source) as ds:
         keys = [
             "c1_eigen_m_s", "c1_wkb_m_s", "c1_final_corrected_m_s",
@@ -68,4 +73,3 @@ def validate_output(config: dict) -> Path:
     if failures:
         raise ValueError(f"Validation failed: {failures}; see {output}")
     return output
-
