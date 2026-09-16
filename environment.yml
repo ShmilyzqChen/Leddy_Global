@@ -1,0 +1,21 @@
+name: leddy
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - libblas=*=*openblas
+  - numpy=2.3
+  - scipy=1.16
+  - netcdf4
+  - xarray
+  - pyyaml
+  - gsw
+  - bottleneck
+  - dask-core
+  - numba
+  - matplotlib
+  - pillow
+  - tqdm
+  - pytest
+  - psutil
+  - pip

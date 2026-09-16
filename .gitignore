@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.pytest_tmp_*/
+.ruff_cache/
+.coverage
+build/
+dist/
+.idea/
+.vscode/
+
+# Local machine paths and generated products
+config/local_*.yml
+intermediate/
+output/
+logs/
+figures/
+
+# Keep empty generated-data directories in local checkouts only
+*.nc
+*.npz
+*.log

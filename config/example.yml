@@ -1,0 +1,48 @@
+paths:
+  cmems_daily_root: /path/to/cmems_daily_files
+  woa_temperature: /path/to/woa23_decav_t00_04.nc
+  woa_salinity: /path/to/woa23_decav_s00_04.nc
+  woa_bottom_mask: /path/to/landsea_04.msk
+  work_root: /path/to/Leddy_Global
+
+period:
+  start: '1993-01-01'
+  end: '2024-12-31'
+
+# Null means the complete global grid. Bounds are cell-centre inclusive.
+region:
+  name: global
+  lon_min: null
+  lon_max: null
+  lat_min: null
+  lat_max: null
+
+eke:
+  u_variable: ugosa
+  v_variable: vgosa
+  ice_variable: flag_ice
+  exclude_ice_flag: 1
+  minimum_valid_days: 365
+  minimum_valid_years: 5
+
+stratification:
+  n2_floor_s_2: 1.0e-8
+  maximum_corrected_thickness_fraction: 0.20
+  maximum_depth_m: 5500.0
+  minimum_profile_levels: 4
+
+qc:
+  window_cells: 5
+  mad_multiplier: 6.0
+  maximum_feature_cells: 4
+  maximum_hole_width_cells: 2
+  maximum_depth_ratio: 2.0
+
+output:
+  compression_level: 4
+  float_dtype: float32
+
+resources:
+  minimum_free_memory_gb: 4.0
+  minimum_free_disk_gb: 20.0
+  woa_latitude_block_rows: 8

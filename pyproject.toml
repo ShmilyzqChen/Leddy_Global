@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leddy-global"
+version = "0.1.0"
+description = "Global eddy length scales from WOA23 stratification and DUACS EKE"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+  "numpy",
+  "scipy",
+  "netCDF4",
+  "xarray",
+  "PyYAML",
+  "gsw",
+  "bottleneck",
+  "numba",
+  "psutil",
+  "matplotlib",
+  "Pillow",
+  "tqdm",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+leddy = "leddy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
