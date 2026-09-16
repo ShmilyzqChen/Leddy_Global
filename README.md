@@ -148,6 +148,10 @@ exports PNG and PDF separately from the original quicklook.
 
 - Eden (2007), *Eddy Length Scales in the North Atlantic Ocean*,
   <https://doi.org/10.1029/2006JC003901>.
+- Chelton, D. B., deSzoeke, R. A., Schlax, M. G., El Naggar, K., & Siwertz,
+  N. (1998), *Geographical variability of the first baroclinic Rossby radius
+  of deformation*, *Journal of Physical Oceanography*, 28, 433--460,
+  [doi:10.1175/1520-0485(1998)028<0433:GVOTFB>2.0.CO;2](https://doi.org/10.1175/1520-0485%281998%29028%3C0433%3AGVOTFB%3E2.0.CO%3B2).
 - Vergara et al. (2019), *Revised Global Wave Number Spectra from Recent
   Altimeter Observations*, <https://doi.org/10.1029/2018JC014844>.
 - Rhines (1975), *Waves and turbulence on a beta-plane*,
@@ -157,6 +161,9 @@ exports PNG and PDF separately from the original quicklook.
   properties in the tropical South-East Atlantic Ocean*, *Journal of
   Geophysical Research: Oceans*, 128, e2022JC019050,
   <https://doi.org/10.1029/2022JC019050>.
+- Klocker, A., & Abernathey, R. (2014), *Global patterns of mesoscale eddy
+  properties and diffusivities*, *Journal of Physical Oceanography*, 44,
+  1030--1046, <https://doi.org/10.1175/JPO-D-13-0159.1>.
 
 ## Validation and licence
 
